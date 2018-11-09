@@ -72,7 +72,8 @@ header {
 /*box2*/
 
 .container2 {
-  display; flex;
+  display: flex;
+  flex-direction: row;
   background-color: white;
   width: 100%;
 }
@@ -81,8 +82,6 @@ header {
   display: flex;
   flex-direction: column;
   width: 60%;
-  border-style: solid;
-  border-color: black;
 }
 .column3content {
   margin-left: 24px;
@@ -92,14 +91,79 @@ header {
   padding: 32px 24px;
 }
 .info {
-
+  display: flex;
+  border-bottom-style: double;
+  border-color: lightgrey;
 }
 .info img{
   width: 35%;
-  height: auto;
+  height: 28%;
+  padding: 16px;
+}
+.infocontent {
+  display: flex;
+  flex-direction: column;
+
 }
 .column4 {
-  width: 30%;
-  border-style: solid;
-  border-color: black;
+  display: flex;
+  flex-direction: column;
+  border-left-style: solid;
+  border-color: lightgrey;
+  width: 35%;
+  margin-left: 5%;
+}
+.background {
+  background-color: lightgrey;
+}
+
+/*Box3*/
+
+.container3 {
+  background-color: lightgrey;
+}
+.container3 h1 {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 32px;
+}
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px 72px;
+}
+.program {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 32px;
+  background-color: white;
+}
+.program img {
+  height: 25%;
+}
+.program h3 {
+  padding-left: 16px;
+}
+.program span {
+  padding: 8px 16px;
+}
+
+/*Box4*/
+.container4 h1 {
+  text-align: center;
+  padding: 32px;
+}
+.flex4 {
+  display: flex;
+}
+
+.column5 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.column5 video {
+  padding 24px;
 }
