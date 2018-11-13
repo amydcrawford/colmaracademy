@@ -4,7 +4,7 @@ html {
 body {
   margin: 0;
 }
- /*header*/
+                        /*header*/
 
 header {
   display: flex;
@@ -13,18 +13,22 @@ header {
   background-color: white;
   width: 100%;
 }
-.logo {
+
+.logo img {
   margin-left: 24px;
-  height: 32px;
+  height: 48px;
 }
 
 .colmar {
-  color: darkgrey;
+  color: dimgrey;
   font-weight: bold;
+  font-size: 24px;
+  font-family: Verdana;
 }
 .academy {
   color: lightgrey;
-  font-weight: bold;
+  font-size: 24px;
+  font-family: Verdana;
 }
 .navigation {
   margin-right: 24px;
@@ -36,8 +40,11 @@ header {
 
 .navigation ul li a {
   padding: 16px;
-  color: black;
+  color: dimgrey;
   text-decoration: none;
+}
+.navigationmobile {
+  display: none;
 }
 
 /*box1*/
@@ -55,18 +62,20 @@ header {
 .container1 .column2 {
   display: flex;
   flex-direction: column;
-  color: grey;
+  color: dimgrey;
   justify-content: center;
 }
+.column2 h1 {
+
+}
 .container1 .button {
-  background-color: grey;
+  background-color: dimgrey;
   padding: 8px;
   margin-right: 36px;
   text-align: center;
 }
 .container1 .button h2 {
   color: white;
-  text-decoration: none;
 }
 
 /*box2*/
@@ -99,6 +108,9 @@ header {
   width: 35%;
   height: 28%;
   padding: 16px;
+}
+.mobileimg {
+  display: none;
 }
 .infocontent {
   display: flex;
@@ -163,7 +175,207 @@ header {
   display: flex;
   flex-direction: column;
   width: 60%;
+  padding-left: 24px;
 }
 .column5 video {
-  padding 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  width: 95%;
+}
+.box4 {
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.box5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.column6 {
+  width: 40%;
+}
+.column6 img {
+  width: 35%;
+  height: 30%;
+  padding: 16px;
+}
+.column6 .words {
+  width: 65%;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top-style: solid;
+  width: 100%;
+  border-top-color: lightgrey;
+}
+.copyright {
+  margin-top: 16px;
+  margin-left: 24px;
+  margin-bottom: 32px;
+}
+.terms {
+  margin-top: 16px;
+  margin-right: 24px;
+}
+.terms span {
+  padding: 5px;
+  text-align: right;
+  color: black;
+}
+.terms a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+    margin: 0;
+  }
+  .logo {
+    display: none;
+  }
+  .colmar {
+    display: none;
+  }
+  .academy {
+    display: none;
+  }
+  .navigation ul {
+    display: none;
+  }
+  .navigationmobile {
+    display: contents;
+  }
+  .navigationmobile ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+  /*box1*/
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .column1 img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .container1 .button {
+    margin: 24px;
+  }
+  /*box2*/
+
+  .column4 {
+    display: flex;
+    flex-direction: column;
+    border-left-style: none;
+    width: 100%;
+  }
+
+  .column3 {
+    width: 0;
+    display: none;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    border-bottom-style: none;
+  }
+  .info img{
+    display: none;
+  }
+  .info .mobileimg {
+    display: flex;
+    height: auto;
+    width: 100%;
+  }
+  .infocontent {
+    margin-left: 32px;
+  }
+
+  .background {
+    background-color: white;
+  }
+  /*Box3*/
+
+  .container3 {
+    background-color: white;
+  }
+
+  .flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+  }
+  .program {
+    margin: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: lightgrey;
+  }
+  .program img {
+    display:none;
+  }
+  .program h3 {
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+  .program span {
+    display: none;
+  }
+  /*Box4*/
+  .container4 h1 {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 16px;
+  }
+  .container4 h2 {
+    display: none;
+  }
+  .container4 p {
+    display: none;
+  }
+  .column5 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .column5 video {
+    padding-bottom: 24px;
+    width: 100%;
+  }
+
+  .box4 {
+    display: none;
+  }
+  .box5 {
+    display: none;
+  }
+  .column6 {
+    display: none;
+  }
+
+  .copyright {
+    margin-top: 16px;
+    margin-left: 24px;
+    margin-bottom: 16px;
+  }
+  .terms {
+    display: none;
+  }
 }
