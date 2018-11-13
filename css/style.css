@@ -40,7 +40,7 @@ header {
 
 .navigation ul li a {
   padding: 16px;
-  color: dimgrey;
+  color: #484848;
   text-decoration: none;
 }
 .navigationmobile {
@@ -62,20 +62,23 @@ header {
 .container1 .column2 {
   display: flex;
   flex-direction: column;
-  color: dimgrey;
+  padding-left: 24px;
+  color: #484848;
   justify-content: center;
 }
 .column2 h1 {
-
+  font-size: 48px;
+  color: #484848;
 }
 .container1 .button {
-  background-color: dimgrey;
+  background-color: #484848;
   padding: 8px;
   margin-right: 36px;
   text-align: center;
 }
 .container1 .button h2 {
   color: white;
+  text-decoration: none;
 }
 
 /*box2*/
@@ -94,6 +97,11 @@ header {
 }
 .column3content {
   margin-left: 24px;
+  color: #484848;
+}
+.column3content h2 {
+  font-size: 36px;
+  font-weight: bold;
 }
 .box2image1 img {
   width: 60vw;
@@ -115,7 +123,12 @@ header {
 .infocontent {
   display: flex;
   flex-direction: column;
+  color: #484848;
+}
 
+.infocontent a {
+  color: blue;
+  text-decoration: none;
 }
 .column4 {
   display: flex;
@@ -138,6 +151,7 @@ header {
   text-align: center;
   font-weight: bold;
   padding-top: 32px;
+  color: #484848;
 }
 .flexbox {
   display: flex;
@@ -157,15 +171,18 @@ header {
 }
 .program h3 {
   padding-left: 16px;
+  color: #484848;
 }
 .program span {
   padding: 8px 16px;
+  color: #484848;
 }
 
 /*Box4*/
 .container4 h1 {
   text-align: center;
   padding: 32px;
+  color: #484848;
 }
 .flex4 {
   display: flex;
@@ -176,6 +193,7 @@ header {
   flex-direction: column;
   width: 60%;
   padding-left: 24px;
+  color: #484848;
 }
 .column5 video {
   padding-right: 24px;
@@ -195,6 +213,7 @@ header {
 }
 .column6 {
   width: 40%;
+  color: #484848;
 }
 .column6 img {
   width: 35%;
@@ -210,6 +229,7 @@ header {
   border-top-style: solid;
   width: 100%;
   border-top-color: lightgrey;
+  color: #484848;
 }
 .copyright {
   margin-top: 16px;
@@ -233,10 +253,11 @@ header {
 
   header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 64px;
-    align-items: center;
+    width: 100%;
     margin: 0;
+    padding: 0;
   }
   .logo {
     display: none;
@@ -257,6 +278,9 @@ header {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+  }
+  .navigationmobile ul li {
+    padding-right: 60px;
   }
   /*box1*/
 
